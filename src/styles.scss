@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.mat-mdc-card-outlined {
+    border-width: 1px !important;
+    border-radius: 5px !important;
+}

@@ -1,6 +1,6 @@
-# CodingChallenge
+# Data Visualization of Employees
+This project displays employees of a Fictitious Company in a table and also in bar chart.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
 
 ## Development server
 
