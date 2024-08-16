@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/slowpoison36/take-home-project/compare/v0.0.1...v0.0.2) (2024-08-16)
+
+
+### Features
+
+* implemented visual page and updated the readme file ([b6b42f5](https://github.com/slowpoison36/take-home-project/commit/b6b42f5f76d58fcbf236420f82f8f7e5bdb2f415))
+
 ### 0.0.1 (2024-08-16)
 
 
