@@ -1,3 +1,14 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 0.0.1 (2024-08-16)
+
+
+### Features
+
+* dashboard for post page with implementation with api integration ([4db41ff](https://github.com/slowpoison36/take-home-project/commit/4db41fffbe4bb6acf493f85ec3a8b52f3c6c0d65))
+
 ### Changelog
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
