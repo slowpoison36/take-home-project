@@ -1,7 +1,7 @@
 # Data Visualization of Blog Post
 This project displays blog post added by our registered user on our website.
 
-Description
+# Description
 The project utilizes angular material to display tabular data and chart js of  angular library.
 Angular material is a very well tested and widely used within angular community to speed up the development process. 
 
