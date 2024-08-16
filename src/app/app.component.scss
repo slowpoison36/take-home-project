@@ -2,12 +2,12 @@ nav {
     background-color: #012730;
     font-size: 1.5rem;
     padding: 2rem;
-    height: 5rem;
 
     ul {
         display: flex;
         list-style: none;
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 3rem;
         justify-content: center;
         width: 100%;
         height: 100%;
@@ -25,11 +25,11 @@ nav {
 
 }
 
-.container {
-    width: 114rem;
-    margin: 2rem auto;
-}
-
 .link-active {
     border-bottom: 3px solid #4CAF50;
+}
+
+.auto-margin {
+    margin: 2rem auto;
+    width: calc(100vw - 20rem);
 }
