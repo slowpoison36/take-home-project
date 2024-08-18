@@ -1,23 +1,25 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmployeeVisualizationComponent } from './post-visualization.component';
+import { PostVisualizationComponent } from './post-visualization.component';
+import { provideHttpClient } from '@angular/common/http';
+import { PostService } from '../services/post.service';
+import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2-charts';
 
-describe('EmployeeVisualizationComponent', () => {
-  let component: EmployeeVisualizationComponent;
-  let fixture: ComponentFixture<EmployeeVisualizationComponent>;
+describe('PostVisualizationComponent', () => {
+  let component: PostVisualizationComponent;
+  let fixture: ComponentFixture<PostVisualizationComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ EmployeeVisualizationComponent ]
+      imports: [],
+      providers:[provideHttpClient(),provideCharts(withDefaultRegisterables())]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EmployeeVisualizationComponent);
+    fixture = TestBed.createComponent(PostVisualizationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

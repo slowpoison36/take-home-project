@@ -1,17 +1,20 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AddPostComponent } from './add-post.component';
+import { provideHttpClient } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('AddPostComponent', () => {
   let component: AddPostComponent;
   let fixture: ComponentFixture<AddPostComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddPostComponent ]
+      declarations: [],
+      imports:[MatDialogModule,NoopAnimationsModule],
+      providers:[provideHttpClient()],
+
     })
     .compileComponents();
   }));

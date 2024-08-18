@@ -41,9 +41,7 @@ export class AddPostComponent implements OnInit {
   isSubmitted: boolean = false;
   postService = inject(PostService);
   fb: FormBuilder = inject(FormBuilder);
-
-
-  constructor(private dialogRef: MatDialogRef<AddPostComponent>) {}
+  dialogRef = inject(MatDialogRef, {optional: true})
 
   ngOnInit() {
     this.createForm();
@@ -67,8 +65,8 @@ export class AddPostComponent implements OnInit {
   public addPost(): void {
     this.isSubmitted = true;
     if (!this.postForm.invalid) {
-      this.postService.addPost(this.postForm.value).subscribe((data) => {
-        this.dialogRef.close();
+      this.postService.addPost(this.postForm.value).subscribe(() => {
+        this.dialogRef?.close();
         this.postForm.reset();
       });
     }
@@ -76,6 +74,6 @@ export class AddPostComponent implements OnInit {
 
   public cancelAdd(): void {
     this.postForm.reset();
-    this.dialogRef.close();
+    this.dialogRef?.close();
   }
 }

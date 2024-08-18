@@ -1,7 +1,7 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { ChartDataset, ChartOptions } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
+import { ChartDataset, ChartOptions } from 'chart.js';
 import { PostService } from '../services/post.service';
+import { Component, inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-employee-visualization',
@@ -10,7 +10,7 @@ import { PostService } from '../services/post.service';
   standalone: true,
   imports: [BaseChartDirective],
 })
-export class EmployeeVisualizationComponent implements OnInit {
+export class PostVisualizationComponent implements OnInit {
   private postService = inject(PostService);
   barChartOptions: ChartOptions = {
     responsive: true,
@@ -18,7 +18,6 @@ export class EmployeeVisualizationComponent implements OnInit {
   barChartLabels: string[] = [];
   barChartLegend = true;
   barChartPlugins = [];
-
   barChartData: ChartDataset[] = [{ data: [], label: 'Posts count' }];
 
   ngOnInit() {
