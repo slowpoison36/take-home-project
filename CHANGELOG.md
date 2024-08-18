@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/slowpoison36/take-home-project/compare/v0.1.0...v0.1.1) (2024-08-18)
+
+
+### Bug Fixes
+
+* fix all test cases ([59866c5](https://github.com/slowpoison36/take-home-project/commit/59866c5943ee48ccd761383580172e1106a98b64))
+
 ## [0.1.0](https://github.com/slowpoison36/take-home-project/compare/v0.0.2...v0.1.0) (2024-08-16)
 
 ### [0.0.2](https://github.com/slowpoison36/take-home-project/compare/v0.0.1...v0.0.2) (2024-08-16)
